@@ -6,7 +6,8 @@ A demo website (kawwa design) to illustrate the use of the tapestry-genetify mod
 Installation
 ============
 
-Import the project and launch it with the "jetty:run" maven command
+* Import the [tapestry-genetify](https://github.com/adaptivui/tapestry-genetify) project and install it ("mvn install" maven command)
+* Import the project and launch it ("jetty:run" maven command)
 
 Screenshot
 ==========

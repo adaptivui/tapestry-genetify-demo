@@ -1,0 +1,74 @@
+<html t:type="Layout" t:title="tapestry-genetify-sample Detail" 
+					xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+				xmlns:p="tapestry:parameter">
+
+
+<article class="k-product-sheet">
+	<!-- example of hproduct sheet -->
+	<div class="hproduct k-product">
+		<div class="photo-data">
+			<p><a href="#" title="">
+				<img class="photo" src="${context:/static/img/0.png}" alt="Title of product" /></a></p>
+				<br/><br/>
+				<!-- Use a Block to vary template -->
+				<t:delegate t:to="expert"/>
+		</div>
+		<div class="product-data">
+			<h3 class="fn name">Title of product</h3>
+			<h4 class="category"><a href="#">Product category</a></h4>
+			<p class="rating five" title="5/5"><a href="#comments" title="See what other customers are saying">50 comments</a></p>
+			<p class="description">Eget velit convallis laoreet consectetuer In dictum est 
+								ipsum gravida consequat. Elit Sed magna id congue scelerisque velit convallis laoreet consectetuer In dictum est 
+								ipsum gravida consequat. Elit Sed magna id congue scelerisque.</p>
+			<ul class="product-info">
+				<li><strong>Ref.:</strong> 1235A/gray</li>
+				<li><strong>Height:</strong> 65cm</li>
+				<li><strong>Composition:</strong> 20% cotton/80% wool</li>
+			</ul>
+			<div class="price-data">
+				<p class="extra sale"><span class="discount">-20%</span> sale</p>
+				<p class="all-prices">
+					<span class="hidden">Old price :</span> 
+					<span class="old-price" title="Old price">60,50 €</span><br />
+					<strong class="price sale">50,50 €</strong></p>
+			</div>
+			<div class="buyZone">
+				<div class="availability">
+					<p><strong>Availability :</strong> immediate delivery</p>
+				</div>
+				
+				<!-- [Genetify] Record the goal on click action using a mixins -->
+				<p class="buy ${highlight('blue')}"><a t:type="actionlink" t:id="addToBasketLink" t:zone="zone" t:mixins="genetify/RecordGoal" t:label="addToBasket" t:score="1" href="#">Add to basket</a></p>
+				<!-- End -->
+					
+				<t:zone t:id="zone"></t:zone>
+			</div>
+		</div>
+	</div>
+</article>
+
+<t:Block id="expert">
+	<div class="${highlight('red')}">
+		<!-- [Genetify] Vary this portion of template -->	
+		<div class="expertise">
+		  	<p class="little_photo ratingleft three">&nbsp;</p>
+			<p class="description">A very functional product that deserves its price.</p>
+		</div>
+		<div class="expertise v bis">
+		  	<p class="little_photo ratingleft two">&nbsp;</p>
+			<p class="description">Easy to use but not so robust with a weak longevity. It's a pity especially that ergonomics is excellent.</p>
+		</div>
+		<div class="expertise v ters">
+			<p class="little_photo ratingleft four">&nbsp;</p>
+			<p class="description">Easy to use, this product will ease your life.</p>
+		</div>
+		<div class="expertise v quater">
+			<p class="little_photo ratingleft five">&nbsp;</p>
+			<p class="description">Simple and efficient. I love it</p>
+		</div>
+		<div class="expertise v quinquies"></div>
+		<!-- End -->
+	</div>
+</t:Block>
+
+</html>

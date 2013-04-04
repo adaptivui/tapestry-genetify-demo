@@ -1,0 +1,42 @@
+<html t:type="Layout" t:title="tapestry-genetify-sample" 
+					xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+				xmlns:p="tapestry:parameter">
+	
+	
+	<div class="k-catalog">
+	
+				
+	<!-- hproduct/ -->
+	<article class="k-product hproduct">
+		<div class="photo-data">
+			<!-- [Genetify] Record the goal on click action using a mixins -->
+			<p><a t:type="PageLink" t:page="detail" t:context="highlight" t:mixins="genetify/RecordGoal" t:label="viewProduct" t:score="1" href="#" title="See Product sheet">
+				<img class="photo ${highlight('blue')}" src="${context:/static/img/0.png}" alt="Title of product" /></a></p>
+			<!-- End -->	
+		</div>
+		
+		<!-- [Genetify] Vary this portion of template -->
+		<p class="${highlight('red')} extra new">new</p>
+		<p class="${highlight('red')} extra new v bis">fun!</p>
+		<p class="${highlight('red')} extra new v ters">high tech</p>
+		<!-- End -->
+	
+		<h3 class="fn name"><a href="#" t:type="PageLink" t:page="detail" title="See Product sheet">Product title</a></h3>
+		<p class="rating two" title="3/5"><a href="#comments">50 comments</a></p>
+		<div class="price-data">
+			<p class="all-prices"><strong class="price new">50,50 €</strong></p>
+		</div>
+		
+		<div class="buyZone ${highlight('blue')}">
+			<!-- [Genetify] Record the goal on click action using a mixins -->
+			<p class="buy"><a t:type="PageLink" t:page="index" t:context="highlight" href="#" t:mixins="genetify/RecordGoal" t:label="addToBasket" t:score="2" >Add to basket</a></p>
+			<!-- End -->
+		</div>
+	</article>
+	<!-- /hproducts -->
+	
+</div>
+
+
+	
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+	xmlns:p="tapestry:parameter">
+	<head>
+		<title>${title}</title>
+	</head>
+	<body>
+
+		<div id="container">
+
+			<!-- PAGE HEADER -->
+			<div id="header">
+				<a t:type="pageLink" t:page="Index">
+					<h1>Adaptive UI	<small>Self evolving design</small></h1>
+					<div class="clearer">
+						<p class="k-basket-sum"><a href="#" title="See basket details"><strong>0</strong> items in your basket</a></p>
+					</div>
+				</a>
+			 	<div id="navbar">
+				 	<ul class="k-navbar">
+						<li class="home"><a t:type="pageLink" t:page="Index">Home</a></li>
+						<li><a t:type="pageLink" t:page="detail">Example page</a></li>
+				 	</ul>
+			 	</div>
+			</div>
+
+			<hr />
+			<!-- COLUMNS WRAPPER/ -->
+			<div id="wrapper">
+				<t:body />
+			</div>
+			<h1 id="msg">Click to <a t:type="pagelink" t:page="prop:componentResources.getPageName()" href="#" t:context="true">highlight</a> or <a t:type="pagelink" t:page="prop:componentResources.getPageName()" href="#" t:context="false">hide</a> Genetify items</h1>
+			<!-- /COLUMNS WRAPPER -->
+
+			<hr />
+			<!-- FOOTER -->
+			<div id="footer">
+				<p class="k-copyright">&copy; Adaptivui &amp; <a href="https://github.com/got5/KAWWA">KAWWA</a> Design, 2013</p>
+			</div>
+
+		</div> <!-- /container -->
+	</body>
+</html>

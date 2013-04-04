@@ -9,7 +9,7 @@ Installation
 * Import the [tapestry-genetify](https://github.com/adaptivui/tapestry-genetify) project and install it ("mvn install" maven command)
 * Import the project and launch it ("jetty:run" maven command)
 
-Screenshot
-==========
+Screenshots
+===========
 
 ![tapestry-genetify demo website](/src/main/webapp/static/img/tapestry-genetify-demo.png?raw=true)

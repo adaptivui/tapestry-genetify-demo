@@ -1,7 +1,7 @@
 tapestry-genetify-demo
 ======================
 
-A demo website (kawwa design) to illustrate the use of the tapestry-genetify module 
+A demo website using the [kawwa](https://github.com/got5/KAWWA) design to illustrate the use of the tapestry-genetify module 
 
 Installation
 ============

@@ -7,8 +7,12 @@
 	<!-- example of hproduct sheet -->
 	<div class="hproduct k-product">
 		<div class="photo-data">
-			<p><a href="#" title="">
-				<img class="photo" src="${context:/static/img/0.png}" alt="Title of product" /></a></p>
+			<p>
+				<div class="${highlight('grey')}">
+					<a href="#" title="">
+					<img class="photo" src="${context:/static/img/0.png}" alt="Title of product" /></a>
+				</div>	
+					</p>
 				<br/><br/>
 				<!-- Use a Block to vary template -->
 				<t:delegate t:to="expert"/>
@@ -38,7 +42,18 @@
 				</div>
 				
 				<!-- [Genetify] Record the goal on click action using a mixins -->
-				<p class="buy ${highlight('blue')}"><a t:type="actionlink" t:id="addToBasketLink" t:zone="zone" t:mixins="genetify/RecordGoal" t:label="addToBasket" t:score="1" href="#">Add to basket</a></p>
+				<p class="buy ${highlight('red-blue')}">
+					<a t:type="actionlink" t:id="addToBasketLink" t:zone="zone" t:mixins="genetify/RecordGoal" t:label="addToBasket" t:score="1" href="#">
+						<!-- [Genetify] Change the button's wording -->
+						<span class="addToBasket">
+							Add to basket
+						</span>
+						<span class="addToBasket v buyItNow">
+							Buy it now !
+						</span>
+						<!-- End -->
+					</a>
+				</p>
 				<!-- End -->
 					
 				<t:zone t:id="zone"></t:zone>
@@ -51,20 +66,24 @@
 	<div class="${highlight('red')}">
 		<!-- [Genetify] Vary this portion of template -->	
 		<div class="expertise">
+			<p><img alt="Our expert" src="${context:/static/img/Emmanuel_Demey.jpg}"/></p>
 		  	<p class="little_photo ratingleft three">&nbsp;</p>
-			<p class="description">A very functional product that deserves its price.</p>
+			<div class="${highlight('grey')}"><p class="description">A very functional product that deserves its price.</p></div>
 		</div>
 		<div class="expertise v bis">
+		  	<p><img alt="Our expert" src="${context:/static/img/Bruno_Verachten.jpg}"/></p>
 		  	<p class="little_photo ratingleft two">&nbsp;</p>
-			<p class="description">Easy to use but not so robust with a weak longevity. It's a pity especially that ergonomics is excellent.</p>
+			<div class="${highlight('grey')}"><p class="description">Easy to use but not so robust with a weak longevity. It's a pity especially that ergonomics is excellent.</p></div>
 		</div>
 		<div class="expertise v ters">
-			<p class="little_photo ratingleft four">&nbsp;</p>
-			<p class="description">Easy to use, this product will ease your life.</p>
+			<p><img alt="Our expert" src="${context:/static/img/Nourredine_Khadri.jpg}"/></p>
+		  	<p class="little_photo ratingleft four">&nbsp;</p>
+			<div class="${highlight('grey')}"><p class="description">Easy to use, this product will ease your life.</p></div>
 		</div>
 		<div class="expertise v quater">
-			<p class="little_photo ratingleft five">&nbsp;</p>
-			<p class="description">Simple and efficient. I love it</p>
+			<p><img alt="Our expert" src="${context:/static/img/Francois_Facon.jpg}"/></p>
+		  	<p class="little_photo ratingleft five">&nbsp;</p>
+			<div class="${highlight('grey')}"><p class="description">Simple and efficient. I love it</p></div>
 		</div>
 		<div class="expertise v quinquies"></div>
 		<!-- End -->

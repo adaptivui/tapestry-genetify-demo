@@ -10,9 +10,6 @@
 #msg:before{
 	content:none;
 }
-p.buy a.vBlue{
-	background: blue;
-}
 
 .little_photo {max-width:20%}
 
@@ -47,12 +44,59 @@ p.ratingleft {
 }
 
 .blue-highlight {
-	border:3px dashed blue;
+	border:2px dashed blue;
 	padding: 10px 10px 10px 10px;
 }
 
 .red-highlight {
-	border:3px dashed red;
+	border:2px dashed red;
 	padding: 10px 10px 10px 10px;
 }
+
+.red-blue-highlight {
+	border: 2px dashed;
+	border-bottom-color: red;
+	border-left-color: blue;
+	border-right-color: red;
+	border-top-color: blue;
+	
+	padding: 10px 10px 10px 10px;
+}
+
+.grey-highlight {
+	border:2px dashed grey;
+	padding: 10px 10px 10px 10px;
+}
+
+.k-product-sheet img.photo {
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 3px #333333;
+    outline: 1px solid #CCCCCC;
+    width: 60%;
+}
+
+/* [Genetify] Additional css to vary the img size */
+.k-product-sheet img.photo.vLarge {
+    width: 80%;
+}
+
+img {
+    border: 0 none;
+    width: 20%;
+}
+
+.expertise .description{
+	font-size : 0.75em;
+}
+
+/* [Genetify] Additional css to change font size expert's comments */
+.expertise .description.vFont{
+	font-size : 1em;
+}
+
+/* [Genetify] Additional css to change button's color */
+p.buy a.vBlue{
+	background: blue;
+}
+
 

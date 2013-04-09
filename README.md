@@ -13,3 +13,5 @@ Screenshots
 ===========
 
 ![tapestry-genetify demo website](/src/main/webapp/static/img/tapestry-genetify-demo.png?raw=true)
+![Genetify variations](/src/main/webapp/static/img/genetify-variations.png?raw=true)
+![Genetify GUI and report](/src/main/webapp/static/img/genetify-gui-report.png?raw=true)

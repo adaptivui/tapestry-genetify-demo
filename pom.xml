@@ -13,9 +13,12 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<tapestry-release-version>5.3.6</tapestry-release-version>
-    </properties>
+		<tapestry-genetify-version>1.0.0-SNAPSHOT</tapestry-genetify-version>
+                <tapestry5-kawwa-components-version>2.0.5-SNAPSHOT</tapestry5-kawwa-components-version>
+    	        <tapestry5-jquery-version>3.3.8-SNAPSHOT</tapestry5-jquery-version>
+        </properties>
     
-    <repositories>
+        <repositories>
 		<repository>
 			<id>devlab722-repo</id>
 			<url>http://nexus.devlab722.net/nexus/content/repositories/releases</url>
@@ -28,16 +31,16 @@
 			<url>http://nexus.devlab722.net/nexus/content/repositories/snapshots</url>
 			<releases>
 				<enabled>false</enabled>
-                        </releases>
-                </repository>   
-                <repository>
-	                <id>tapestry-genetify-mvn-repo</id>
-	                <url>https://raw.github.com/adaptivui/tapestry-genetify/tree/mvn-repo/</url>
-	                <snapshots>
-	                        <enabled>true</enabled>
-	                        <updatePolicy>always</updatePolicy>
-	                </snapshots>
-	        </repository>
+            </releases>
+       </repository>   
+       <repository>
+	        <id>tapestry-genetify-mvn-repo</id>
+	        <url>https://raw.github.com/adaptivui/tapestry-genetify/tree/mvn-repo/</url>
+	        <snapshots>
+	            <enabled>true</enabled>
+	            <updatePolicy>always</updatePolicy>
+	        </snapshots>
+	    </repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -55,11 +58,9 @@
 		<dependency>
 			<groupId>net.atos.tapestry</groupId>
 			<artifactId>tapestry5-kawwa-components</artifactId>
-				<version>2.0.5-SNAPSHOT</version>
-			</dependency>
+			<version>${tapestry5-kawwa-components-version}</version>
+		</dependency>
 	
-	
-
 
         <!-- A dependency on either JUnit or TestNG is required, or the surefire plugin (which runs the tests)
 			will fail, preventing Maven from packaging the WAR. Tapestry includes a large number
@@ -103,10 +104,15 @@
 		<dependency>
         	<groupId>com.adaptivui.tapestry5.genetify</groupId>
         	<artifactId>tapestry-genetify</artifactId>
-        	<version>1.0.0-SNAPSHOT</version>
+        	<version>${tapestry-genetify-version}</version>
         </dependency>
-        
-        
+
+
+		<dependency>
+			<groupId>org.got5</groupId>
+			<artifactId>tapestry5-jquery</artifactId>
+			<version>${tapestry5-jquery-version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -188,5 +194,4 @@
         </plugins>
     </reporting>
 
-    
 </project>

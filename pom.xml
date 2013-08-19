@@ -14,11 +14,11 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<tapestry-release-version>5.3.6</tapestry-release-version>
 		<tapestry-genetify-version>1.0.0-SNAPSHOT</tapestry-genetify-version>
-        <tapestry5-kawwa-components-version>2.0.5-SNAPSHOT</tapestry5-kawwa-components-version>
-    	<tapestry5-jquery-version>3.3.8-SNAPSHOT</tapestry5-jquery-version>
-    </properties>
+                <tapestry5-kawwa-components-version>2.0.5-SNAPSHOT</tapestry5-kawwa-components-version>
+    	        <tapestry5-jquery-version>3.3.8-SNAPSHOT</tapestry5-jquery-version>
+        </properties>
     
-    <repositories>
+        <repositories>
 		<repository>
 			<id>devlab722-repo</id>
 			<url>http://nexus.devlab722.net/nexus/content/repositories/releases</url>

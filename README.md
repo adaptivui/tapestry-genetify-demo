@@ -6,7 +6,6 @@ A demo website using the [kawwa](https://github.com/got5/KAWWA) design to illust
 Installation
 ============
 
-* Import the [tapestry-genetify](https://github.com/adaptivui/tapestry-genetify) project and install it ("mvn install" maven command)
 * Import the project and launch it ("jetty:run" maven command)
 
 Screenshots

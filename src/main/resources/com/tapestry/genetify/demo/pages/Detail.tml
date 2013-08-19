@@ -66,22 +66,22 @@
 	<div class="${highlight('red')}">
 		<!-- [Genetify] Vary this portion of template -->	
 		<div class="expertise">
-			<p><img alt="Our expert" src="${context:/static/img/Emmanuel_Demey.jpg}"/></p>
+			<p><img alt="Our expert" src="${context:/static/img/employee_1.png}"/></p>
 		  	<p class="little_photo ratingleft three">&nbsp;</p>
 			<div class="${highlight('grey')}"><p class="description">A very functional product that deserves its price.</p></div>
 		</div>
 		<div class="expertise v bis">
-		  	<p><img alt="Our expert" src="${context:/static/img/Bruno_Verachten.jpg}"/></p>
+		  	<p><img alt="Our expert" src="${context:/static/img/employee_2.png}"/></p>
 		  	<p class="little_photo ratingleft two">&nbsp;</p>
 			<div class="${highlight('grey')}"><p class="description">Easy to use but not so robust with a weak longevity. It's a pity especially that ergonomics is excellent.</p></div>
 		</div>
 		<div class="expertise v ters">
-			<p><img alt="Our expert" src="${context:/static/img/Nourredine_Khadri.jpg}"/></p>
+			<p><img alt="Our expert" src="${context:/static/img/employee_3.png}"/></p>
 		  	<p class="little_photo ratingleft four">&nbsp;</p>
 			<div class="${highlight('grey')}"><p class="description">Easy to use, this product will ease your life.</p></div>
 		</div>
 		<div class="expertise v quater">
-			<p><img alt="Our expert" src="${context:/static/img/Francois_Facon.jpg}"/></p>
+			<p><img alt="Our expert" src="${context:/static/img/employee_4.png}"/></p>
 		  	<p class="little_photo ratingleft five">&nbsp;</p>
 			<div class="${highlight('grey')}"><p class="description">Simple and efficient. I love it</p></div>
 		</div>

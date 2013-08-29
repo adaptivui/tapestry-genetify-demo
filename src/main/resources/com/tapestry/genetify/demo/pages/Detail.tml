@@ -43,7 +43,7 @@
 				
 				<!-- [Genetify] Record the goal on click action using a mixins -->
 				<p class="buy ${highlight('red-blue')}">
-					<a t:type="actionlink" t:id="addToBasketLink" t:zone="zone" t:mixins="genetify/RecordGoal" t:label="addToBasket" t:score="1" href="#">
+					<a t:type="PageLink" t:page="detail" href="#" t:mixins="genetify/RecordGoal" t:label="addToBasket" t:score="1">
 						<!-- [Genetify] Change the button's wording -->
 						<span class="addToBasket">
 							Add to basket
@@ -55,8 +55,6 @@
 					</a>
 				</p>
 				<!-- End -->
-					
-				<t:zone t:id="zone"></t:zone>
 			</div>
 		</div>
 	</div>

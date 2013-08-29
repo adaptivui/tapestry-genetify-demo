@@ -20,24 +20,26 @@
 				 	<ul class="k-navbar">
 						<li class="home"><a t:type="pageLink" t:page="Index">Home</a></li>
 						<li><a t:type="pageLink" t:page="detail">Example page</a></li>
+						<li><a href="#" t:type="any" t:id="showStatistics" t:mixins="genetify/showStats">Statistics</a></li>
 				 	</ul>
 			 	</div>
 			</div>
-
 			<hr />
 			<!-- COLUMNS WRAPPER/ -->
 			<div id="wrapper">
 				<t:body />
 			</div>
-			<h1 id="msg">Click to <a t:type="pagelink" t:page="prop:componentResources.getPageName()" href="#" t:context="true">highlight</a> or <a t:type="pagelink" t:page="prop:componentResources.getPageName()" href="#" t:context="false">hide</a> Genetify items</h1>
 			<!-- /COLUMNS WRAPPER -->
 
 			<hr />
 			<!-- FOOTER -->
 			<div id="footer">
-				<p class="k-copyright">&copy; Adaptivui &amp; <a href="https://github.com/got5/KAWWA">KAWWA</a> Design, 2013</p>
+				<h1 class="msg-right">Click to <a t:type="pagelink" t:page="prop:componentResources.getPageName()" href="#" t:context="true">highlight</a> or <a t:type="pagelink" t:page="prop:componentResources.getPageName()" href="#">hide</a> Genetify items</h1>
+				<h1 class="msg-left">Refresh the page to see <a t:type="pagelink" t:page="prop:componentResources.getPageName()" href="#" t:context="true">variations</a></h1>
+				<h1 class="msg-right">Add product to basket to record <a href="#" t:type="any"  t:id="showControlGoal" t:mixins="genetify/showControl">goals</a></h1>  
+				<h1 class="msg-left">Click to show Genetify <a href="#" t:type="any" t:id="showControlPanel" t:mixins="genetify/showControl">control</a> panel</h1>
 			</div>
-
+			<p id="kawwaright" class="k-copyright">&copy; Adaptivui &amp; <a href="https://github.com/got5/KAWWA">KAWWA</a> Design, 2013</p>
 		</div> <!-- /container -->
 	</body>
 </html>

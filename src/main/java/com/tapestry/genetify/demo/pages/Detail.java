@@ -22,12 +22,4 @@ public class Detail extends BasePage{
 	@Inject
 	@Property
 	private Block expert;
-	
-	@Component
-	private Zone zone;
-	
-	@OnEvent(value=EventConstants.ACTION, component="addToBasketLink")
-	public Object addToBasket(){
-		return zone;
-	}
 }

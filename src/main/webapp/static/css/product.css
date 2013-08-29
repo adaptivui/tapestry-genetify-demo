@@ -2,16 +2,40 @@
 	margin-bottom:20px;
 }
 
-#msg{
+.msg-right{
 	background:none;
 	padding: 0.5em 0 0.3em 60px;
+	width: 40%;
+	font-size: 1em;
+	float: right;
 }
 
-#msg:before{
+.msg-right:before{
+	content:none;
+}
+
+.msg-left{
+	background:none;
+	padding: 0.5em 0 0.3em 60px;
+	width: 40%;
+	font-size: 1em;
+	float: left;
+}
+
+.msg-left:before{
 	content:none;
 }
 
 .little_photo {max-width:20%}
+
+#kawwaright { 
+	float: right;
+    width: 60%;
+}
+
+#footer {
+	min-height: 70px;	
+}
 
 p.expert {
     font: 2em NovecentowideBook;

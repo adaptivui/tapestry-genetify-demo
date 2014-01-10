@@ -17,8 +17,8 @@ Import the project and launch it ("jetty:run" maven command)
 Screenshots
 ===========
 
-![tapestry-genetify demo website](/src/main/webapp/static/img/tapestry-genetify-demo.png?raw=true)
+![tapestry-genetify demo website](https://raw2.github.com/adaptivui/tapestry-genetify-demo/master/src/main/webapp/static/img/tapestry-genetify-demo.png)
 ---
-![Genetify variations](/src/main/webapp/static/img/genetify_variations.png?raw=true)
+![Genetify variations](https://raw2.github.com/adaptivui/tapestry-genetify-demo/master/src/main/webapp/static/img/genetify_variations.png)
 ---
-![Genetify GUI and report](/src/main/webapp/static/img/genetify_gui-report.png?raw=true)
+![Genetify GUI and report](https://raw2.github.com/adaptivui/tapestry-genetify-demo/master/src/main/webapp/static/img/genetify_gui-report.png)

@@ -12,11 +12,11 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<tapestry-release-version>5.3.6</tapestry-release-version>
-		<tapestry-genetify-version>1.0.0-SNAPSHOT</tapestry-genetify-version>
-                <tapestry5-kawwa-components-version>2.0.5-SNAPSHOT</tapestry5-kawwa-components-version>
-    	        <tapestry5-jquery-version>3.3.8-SNAPSHOT</tapestry5-jquery-version>
-        </properties>
+		<tapestry-release-version>5.3.7</tapestry-release-version>
+		<tapestry-genetify-version>1.0.0</tapestry-genetify-version>
+        <tapestry5-kawwa-components-version>2.0.5</tapestry5-kawwa-components-version>
+    	<tapestry5-jquery-version>3.3.7</tapestry5-jquery-version>
+    </properties>
     
         <repositories>
 		<repository>
@@ -33,14 +33,6 @@
 				<enabled>false</enabled>
             </releases>
        </repository>   
-       <repository>
-	        <id>tapestry-genetify-mvn-repo</id>
-	        <url>https://github.com/adaptivui/tapestry-genetify/tree/mvn-repo</url>
-	        <snapshots>
-	            <enabled>true</enabled>
-	            <updatePolicy>always</updatePolicy>
-	        </snapshots>
-	    </repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -102,9 +94,9 @@
 		</dependency>
 		
 		<dependency>
-        	<groupId>com.adaptivui.tapestry5.genetify</groupId>
+        	<groupId>com.adaptivui</groupId>
         	<artifactId>tapestry-genetify</artifactId>
-        	<version>1.0.1-SNAPSHOT</version>
+        	<version>${tapestry-genetify-version}</version>
         </dependency>
 
 

@@ -7,5 +7,5 @@ import com.tapestry.genetify.demo.base.BasePage;
 
 
 public class Index extends BasePage{
-
+	
 }

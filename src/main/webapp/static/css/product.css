@@ -123,4 +123,16 @@ p.buy a.vBlue{
 	background: blue;
 }
 
+#buyButton{
+	float:left;
+	text-align:left;
+}
 
+#buyZoneButton{
+	float:left;
+}
+
+#clipart p{
+	top:18%;
+	right:74%;
+}

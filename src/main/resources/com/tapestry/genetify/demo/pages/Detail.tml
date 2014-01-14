@@ -18,12 +18,22 @@
 				<t:delegate t:to="expert"/>
 		</div>
 		<div class="product-data">
+			<!-- [Genetify] Vary this portion of template -->	
 			<h3 class="fn name">Title of product</h3>
+			<h3 class="fn name v title2">The product's title</h3>
+			<!-- End -->
+				
+			<!-- [Genetify] Vary this portion of template -->	
 			<h4 class="category"><a href="#">Product category</a></h4>
+			<h4 class="category v category2"><a href="#">Category of product</a></h4>
+			<!-- End -->
+			
 			<p class="rating five" title="5/5"><a href="#comments" title="See what other customers are saying">50 comments</a></p>
-			<p class="description">Eget velit convallis laoreet consectetuer In dictum est 
-								ipsum gravida consequat. Elit Sed magna id congue scelerisque velit convallis laoreet consectetuer In dictum est 
-								ipsum gravida consequat. Elit Sed magna id congue scelerisque.</p>
+			<p class="description">
+				Genetify brings the power of evolution by natural selection to any website. It lets you make any part of a webpage free to vary and adapt. See it in action with the <a href="https://github.com/adaptivui/tapestry-genetify">tapestry-genetify</a> contribution by <a onclick="genetify.controls.reVary('elements'); return false;" href="#">varying</a> elements of this page.
+				Click to show Genetify <a href="#" t:type="any" t:id="showControlPanelLink" t:mixins="genetify/showControl">control</a> panel and statistics or to <a href="/tapestry-genetify-demo/detail/true">highlight</a> / <a href="/tapestry-genetify-demo/detail">hide</a> Genetify items.<br/>
+				Or maybe you want to add a product to the basket to record <a href="#" t:type="any"  t:id="showControlGoalLink" t:mixins="genetify/showControl">goals</a> and see what happens...<br/><br/>
+			</p>				
 			<ul class="product-info">
 				<li><strong>Ref.:</strong> 1235A/gray</li>
 				<li><strong>Height:</strong> 65cm</li>
@@ -34,7 +44,12 @@
 				<p class="all-prices">
 					<span class="hidden">Old price :</span> 
 					<span class="old-price" title="Old price">60,50 €</span><br />
-					<strong class="price sale">50,50 €</strong></p>
+			
+					<!-- [Genetify] Vary this portion of template -->	
+					<strong class="price sale">50,50 €</strong>
+					<strong class="price sale v discount">-20%</strong>
+					<!-- End -->
+				</p>
 			</div>
 			<div class="buyZone">
 				<div class="availability">
